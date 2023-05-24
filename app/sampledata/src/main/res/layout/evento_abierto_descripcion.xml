@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_encuesta"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="71dp"
+        android:text="Encuesta"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btn_confirmacionA"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fechaLimiteEncuesta" />
+
+    <Button
+        android:id="@+id/btn_confirmacionA"
+        android:layout_width="176dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="28dp"
+        android:text="Confirmación"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_encuesta"
+        app:layout_constraintTop_toBottomOf="@+id/et_fechaLimiteEncuesta" />
+
+    <Button
+        android:id="@+id/btn_verVotaciones"
+        android:layout_width="172dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ver votaciones"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_encuesta" />
+
+    <TextView
+        android:id="@+id/tv_nombre_verEventoA"
+        android:layout_width="72dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Nombre:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloVerEvA" />
+
+    <TextView
+        android:id="@+id/et_descripcionVerEventoA"
+        android:layout_width="250dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="La cena se realizará el 25 en el restaurante tal"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/tv_descripcionVerEvA"
+        app:layout_constraintTop_toBottomOf="@+id/sp_grupoVerEventoA" />
+
+    <TextView
+        android:id="@+id/et_fechaLimiteEncuesta"
+        android:layout_width="224dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="96dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="25/05/2023"
+        android:inputType="date"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_fechaLimiteEncuesta"
+        app:layout_constraintTop_toBottomOf="@+id/et_descripcionVerEventoA" />
+
+    <TextView
+        android:id="@+id/tv_fechaLimiteEncuesta"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="152dp"
+        android:text="Fecha limite votación:"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descripcionVerEvA" />
+
+    <TextView
+        android:id="@+id/tv_descripcionVerEvA"
+        android:layout_width="93dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Descripción:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_grupoVerEventoA" />
+
+    <TextView
+        android:id="@+id/tv_grupoVerEventoA"
+        android:layout_width="57dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Grupo:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_verEventoA" />
+
+    <Spinner
+        android:id="@+id/sp_grupoVerEventoA"
+        android:layout_width="180dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Selecciona grupo"
+        android:popupBackground="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/tv_grupoVerEventoA"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre_verEventoA" />
+
+    <TextView
+        android:id="@+id/et_nombre_verEventoA"
+        android:layout_width="192dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="88dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Cena empresa"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_nombre_verEventoA"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloVerEvA" />
+
+    <TextView
+        android:id="@+id/tv_tituloVerEvA"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="64dp"
+        android:text="Descripción Evento"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

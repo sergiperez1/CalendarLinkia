@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonaranja">
+
+    <Button
+        android:id="@+id/btn_confirmacionC"
+        android:layout_width="179dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="103dp"
+        android:text="Confirmación"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fechaEventoT" />
+
+    <TextView
+        android:id="@+id/tv_nombreEventoT"
+        android:layout_width="104dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Nombre:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloVerEvC"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/tv_descripcionVerEventoC"
+        android:layout_width="251dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="100dp"
+        android:background="#30ffffff"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textMultiLine"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/tv_descripcionEventoT"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_verEventoC" />
+
+    <TextView
+        android:id="@+id/tv_fechaEventoC"
+        android:layout_width="170dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:background="#30ffffff"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="date"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_fechaEventoT"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descripcionVerEventoC" />
+
+    <TextView
+        android:id="@+id/tv_fechaEventoT"
+        android:layout_width="99dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="148dp"
+        android:text="Fecha Evento:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descripcionEventoT" />
+
+    <TextView
+        android:id="@+id/tv_descripcionEventoT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Descripción:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_grupoEventoT" />
+
+    <TextView
+        android:id="@+id/tv_grupoEventoT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Grupo:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_verEventoC" />
+
+    <TextView
+        android:id="@+id/tv_grupoEvCerrado"
+        android:layout_width="213dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="27dp"
+        android:background="#30ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/tv_descripcionVerEventoC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_verEventoC"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_nombre_verEventoC"
+        android:layout_width="186dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="87dp"
+        android:background="#30ffffff"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_nombreEventoT"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloVerEvC" />
+
+    <TextView
+        android:id="@+id/tv_tituloVerEvC"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="64dp"
+        android:text="Descripción Evento"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

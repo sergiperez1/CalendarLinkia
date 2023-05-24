@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoFinalDAM"
+        tools:targetApi="31"
+        tools:ignore="ExtraText">
+        <activity
+            android:name="com.example.proyectofinaldam.InicioSesion.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PantallaPrincipal"></activity>
+        <!-- Eventos-->
+        <activity android:name=".evento.CrearEvento"></activity>
+        <activity android:name=".evento.Confirmacion"/>
+        <activity android:name=".evento.Encuesta"/>
+        <activity android:name=".evento.EventoAbiertoDescripcion"/>
+        <activity android:name=".evento.EventoCerradoDescripcion"/>
+        <activity android:name=".evento.Votaciones"/>
+        <!-- inicio sesion-->
+        <activity android:name=".InicioSesion.GenerarNuevaPassword"></activity>
+        <activity android:name=".InicioSesion.Registro"></activity>
+        <!-- grupos-->
+        <activity android:name=".gestion_grupos.CrearGrupo"/>
+        <activity android:name=".gestion_grupos.ModificarGrupo"/>
+        <activity android:name=".gestion_grupos.AnnadirMiembros"/>
+        <!-- desplegables-->
+        <activity android:name=".gestion_grupos.VerGrupo"/>
+
+        <activity
+            android:name="com.example.proyectofinaldam.InicioSesion.RecuperarPassword"
+            android:exported="false"
+            android:label="recuperar contraseña"
+            android:theme="@style/Theme.ProyectoFinalDAM.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+    </application>
+
+</manifest>

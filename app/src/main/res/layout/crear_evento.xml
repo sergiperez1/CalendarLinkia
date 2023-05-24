@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonaranja">
+
+
+    -
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        -
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_textoErroresNombre"
+                android:layout_width="96dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="48dp"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/btn_crear_evento"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_opcion2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tv_textoErroresFechaEv"
+                android:layout_width="108dp"
+                android:layout_height="71dp"
+                android:layout_marginStart="53dp"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/tv_fechaLimiteEncuesta"
+                app:layout_constraintTop_toBottomOf="@+id/et_fechaFinalEvento" />
+
+            <TextView
+                android:id="@+id/tv_textoErroresFechaEnc"
+                android:layout_width="109dp"
+                android:layout_height="71dp"
+                android:layout_marginEnd="22dp"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fechaRestriccion" />
+
+            <TextView
+                android:id="@+id/tv_textoErroresOpciones"
+                android:layout_width="179dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="4dp"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_opcion3" />
+
+            <TextView
+                android:id="@+id/tv_opcion3Restriccion"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:text=" *"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/et_opcion3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_DiasElegir" />
+
+            <TextView
+                android:id="@+id/tv_opcion2Restriccion"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:text=" *"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/et_opcion3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/et_opcion2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_DiasElegir" />
+
+            <TextView
+                android:id="@+id/tv_opcion1Restriccion"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="1dp"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/et_opcion2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/et_opcion1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_DiasElegir" />
+
+            <TextView
+                android:id="@+id/tv_fechaRestriccion"
+                android:layout_width="40dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="16dp"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/et_fechaFinalEvento"
+                app:layout_constraintTop_toBottomOf="@+id/rdGroup_tipoFecha" />
+
+            <TextView
+                android:id="@+id/tv_descRestriccion"
+                android:layout_width="27dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="12dp"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/et_descripcionCrearE"
+                app:layout_constraintTop_toBottomOf="@+id/tv_grupoRestriccion" />
+
+            <TextView
+                android:id="@+id/tv_grupoRestriccion"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/sp_grupoCrearE"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nombreRestriccion" />
+
+            <EditText
+                android:id="@+id/et_nombre_eventoCrearE"
+                android:layout_width="179dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="84dp"
+                android:background="#30ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Nombre del evento"
+                android:inputType="text"
+                android:maxLength="30"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nombre_eventoCrearE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tituloCrearE"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/et_fechaFinalEvento"
+                android:layout_width="172dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="39dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="dd/mm/yyyy"
+                android:inputType="date"
+                android:maxLength="10"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/tv_fechaLimiteEncuesta"
+                app:layout_constraintTop_toBottomOf="@+id/rdGroup_tipoFecha" />
+
+            <TextView
+                android:id="@+id/tv_nombreRestriccion"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="96dp"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/et_nombre_eventoCrearE"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_fechaLimiteEncuesta"
+                android:layout_width="99dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="52dp"
+                android:text="Fecha evento:"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_preguntaTipoFecha" />
+
+            <TextView
+                android:id="@+id/tv_DiasElegir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="24dp"
+                android:text="Dias a elegir:"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fechaLimiteEncuesta" />
+
+            <EditText
+                android:id="@+id/et_opcion3"
+                android:layout_width="109dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="276dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Opción 3"
+                android:inputType="date"
+                android:maxLength="10"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/btn_crear_evento"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_DiasElegir"
+                app:layout_constraintVertical_bias="0.152" />
+
+            <EditText
+                android:id="@+id/tv_FechaLimiteEvAb"
+                android:layout_width="172dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="39dp"
+                android:background="#30ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="dd/mm/yyyy"
+                android:inputType="date"
+                android:maxLength="10"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/tv_fechaLimiteEncuesta"
+                app:layout_constraintTop_toBottomOf="@+id/rdGroup_tipoFecha" />
+
+            <EditText
+                android:id="@+id/et_opcion2"
+                android:layout_width="109dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="148dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Opción 2"
+                android:inputType="date"
+                android:maxLength="10"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/btn_crear_evento"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_DiasElegir"
+                app:layout_constraintVertical_bias="0.152" />
+
+            <EditText
+                android:id="@+id/et_opcion1"
+                android:layout_width="109dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="24dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Opción 1"
+                android:inputType="date"
+                android:maxLength="10"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/btn_crear_evento"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_DiasElegir"
+                app:layout_constraintVertical_bias="0.152" />
+
+            <TextView
+                android:id="@+id/tv_preguntaTipoFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="124dp"
+                android:text="Fecha abierta?"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_descripcionCrearE"
+                app:layout_constraintVertical_bias="0.02" />
+
+            <Button
+                android:id="@+id/btn_crear_evento"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="152dp"
+                android:layout_marginBottom="24dp"
+                android:text="Crear"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Spinner
+                android:id="@+id/sp_grupoCrearE"
+                android:layout_width="180dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="84dp"
+                android:hint="Selecciona grupo"
+                android:background="#30ffffff"
+                android:popupBackground="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_nombre_eventoCrearE" />
+
+            <EditText
+                android:id="@+id/et_descripcionCrearE"
+                android:layout_width="250dp"
+                android:layout_height="134dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="#30ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Introduzca una descripción"
+                android:inputType="textMultiLine"
+                android:maxLength="250"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_descripcionCrearE"
+                app:layout_constraintTop_toBottomOf="@+id/sp_grupoCrearE" />
+
+            <TextView
+                android:id="@+id/tv_grupoCrearE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                android:text="Grupo:"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sp_grupoCrearE"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nombre_eventoCrearE"
+                app:layout_constraintVertical_bias="0.001" />
+
+            <TextView
+                android:id="@+id/tv_descripcionCrearE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="4dp"
+                android:text="Descripción:"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_grupoCrearE"
+                app:layout_constraintVertical_bias="0.04" />
+
+            <TextView
+                android:id="@+id/tv_nombre_eventoCrearE"
+                android:layout_width="67dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:text="Nombre:"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/et_nombre_eventoCrearE"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tituloCrearE"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_tituloCrearE"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:text="Crear evento"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.438"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.047" />
+
+
+            -
+
+            <RadioGroup
+                android:id="@+id/rdGroup_tipoFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/tv_preguntaTipoFecha"
+                app:layout_constraintTop_toBottomOf="@+id/et_descripcionCrearE">
+
+                <RadioButton
+                    android:id="@+id/rdBtn_tipoFechaSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Si"
+                    tools:layout_editor_absoluteX="221dp"
+                    tools:layout_editor_absoluteY="318dp" />
+
+                <RadioButton
+                    android:id="@+id/rdBtn_tipoFechaNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="true"
+                    android:text="No"
+                    tools:layout_editor_absoluteX="281dp"
+                    tools:layout_editor_absoluteY="318dp" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PruebasFragm.BlankFragmentDesplIzquierdo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rosaazul">
+
+
+        <TextView
+            android:id="@+id/btn_crear_grupo"
+            android:layout_width="355dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="60dp"
+            android:onClick="LlamadaCrearGrupo"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:text="Crear Grupo"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ListView
+            android:id="@+id/lv_grupos_desplegable"
+            android:layout_width="355dp"
+            android:layout_height="539dp"
+            android:layout_marginStart="50dp"
+            android:background="#30ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_crear_grupo" />
+
+        <ImageButton
+            android:id="@+id/ib_plegar_despl_izq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/plegar_desplegable_izq"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

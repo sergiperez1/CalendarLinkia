@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_Encuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Encuesta"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tituloNombreEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="63dp"
+        android:text="Nombre del evento:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Encuesta" />
+
+    <TextView
+        android:id="@+id/tv_nombreEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="63dp"
+        android:text="Nombre del evento"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_tituloNombreEvento"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Encuesta" />
+
+    <TextView
+        android:id="@+id/tv_tituloFechalimite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:text="Fecha límite:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloNombreEvento" />
+
+    <TextView
+
+        android:id="@+id/tv_fechaEncuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="39dp"
+        android:text="21 de mayo de 2023"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_tituloFechalimite"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombreEvento" />
+
+    <RadioButton
+        android:id="@+id/rb_opcion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="66dp"
+        android:minHeight="48dp"
+        android:text="Opción 1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloFechalimite" />
+
+    <RadioButton
+        android:id="@+id/rb_opcion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:minHeight="48dp"
+        android:text="Opción 2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_opcion1" />
+
+    <RadioButton
+        android:id="@+id/rb_opcion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:minHeight="48dp"
+        android:text="Opción 3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_opcion2" />
+
+    <Button
+        android:id="@+id/rb_votarEncuesta"
+        android:layout_width="133dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:text="Votar encuesta"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_opcion3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

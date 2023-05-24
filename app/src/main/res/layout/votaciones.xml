@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonaranja">
+
+    <TextView
+        android:id="@+id/tv_opcion1votacion"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="72dp"
+        android:text="Fecha 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Votaciones" />
+
+    <TextView
+        android:id="@+id/tv_opcion2votacion"
+        android:layout_width="69dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="17dp"
+        android:text="Fecha 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_opcion1votacion" />
+
+    <TextView
+        android:id="@+id/tv_resultadoVotacion1"
+        android:layout_width="73dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="72dp"
+        android:text="30%"
+        app:layout_constraintStart_toEndOf="@+id/tv_opcion1votacion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Votaciones" />
+
+    <TextView
+        android:id="@+id/tv_resultadoVotacion2"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:text="36%"
+        app:layout_constraintStart_toEndOf="@+id/tv_opcion2votacion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resultadoVotacion1" />
+
+    <TextView
+        android:id="@+id/tv_resultadoVotacion3"
+        android:layout_width="84dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="147dp"
+        android:text="34%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_opcion3votacion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resultadoVotacion2" />
+
+    <TextView
+        android:id="@+id/tv_opcion3votacion"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="23dp"
+        android:text="Fecha 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_opcion2votacion" />
+
+    <TextView
+        android:id="@+id/tv_Votaciones"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="64dp"
+        android:text="Votacion Evento"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
